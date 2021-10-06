@@ -1,156 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Idiomas</title>
     <link rel="stylesheet" href="style.css">
+    <title>TOM IDIOMAS</title>
     <script src="https://kit.fontawesome.com/dc6a2949f4.js" crossorigin="anonymous"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '223341653192151');
+        fbq('track', 'PageView');
+        fbq('track', 'Contact');
+        fbq('track', 'FindLocation');
+        fbq('track', 'Lead');
+        fbq('track', 'Purchase', {value: 0.00, currency: 'USD'});
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=223341653192151&ev=PageView&noscript=1"
+    />
+</noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
+
+<a href="https://api.whatsapp.com/send?phone=5582993505982&text=Ol%C3%A1%2C%20Gostaria%20de%20Saber%20Mais" target ="__blank"class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+
+
 <body>
-    <header class="header">
+    <header class = "hero">
         <div class="container">
-            <div class="header__logo">
-                <img src="imagens/logo01.png">
-                <p class="header__logo--left">idiomas</p>
-               <!-- <p class="header__logo--center">DO ZERO Á FLUÊNCIA</p>-->
+            <div class="img-container">
+                <img src="assets/imgs/logo01.png" alt="" class="logo">
+                <p class = "right-align">idiomas</p>
+                <p class = "center-align">DO ZERO À FLUÊNCIA</p>
             </div>
-            <nav class="header__nav">
-                <ul class="header__nav--list">
-                    <li class="header__nav--item"><a href="#home" class="header__nav--links">Home</a></li>
-                    <li class="header__nav--item"><a href="#contact" class="header__nav--links">Contato</a></li>
-                    <li class="header__nav--item"><a href="#about" class ="header__nav--links">Sobre Nós</a></li>
-                    <div class="header__nav--social">
-                        <a href="https://www.instagram.com/tomidiomas/"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-                        <a href="https://www.facebook.com/tomidiomas"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/channel/UCxqpc73WP07uOChyWjW0-zA"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
-        
-                    </div>
-                </ul>
-            </nav>
+            
+            
+            <div class="hero-content">
+                <h1 class="primary-title">Hi my friends! I'm TOM, Aprenda inglês de forma <span class="back-red">simples</span> e <span class="back-red" >descomplicada</span>, let's go?</h1>
+                <iframe class = "video" width="100%" height="90%"  src="https://www.youtube.com/embed/0-Mm0Ive-14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="https://pay.hotmart.com/Y50534281J?checkoutMode=10&bid=1633463368955" class="cta">Saiba Mais!</a>
+
+            </div>
         </div>
     </header>
 
-    <main class="main">
-        <div class="container main__container">
-            <section class="main__body">
-                <h1 class="main__body--main-title">
-                    O que é o curso TOM IDIOMAS ?
+    <main>
 
-                </h1>
+       
 
-                <p class="main__body--description">
-                    O curso TOM idiomas é um curso voltado para você que gostaria de realizar o sonho que é falar Inglês de forma simples e descomplicada, trabalhamos as quatro habilidades linguísticas e com nossa metodologia inovadora você irá desenvolver a compreensão e a comunicação.
+        <section class= "description">
+            
+            <div class="container">
+                <p class="text-description">Com a metodologia TOM IDIOMAS você irá desenvolver a compreensão e a comunicação de forma simples, usando na prática as 4 habilidades linguisticas.</p>
+                <p class="gold-bg">
+                    São mais de 3mil ALUNOS
                 </p>
+            </div>
+            <!--
+           <svg class ="svg-depoimentos"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#285C8E" fill-opacity="1" d="M0,288L1440,256L1440,320L0,320Z"></path></svg>
+           -->
+            
+        </section>
+        <section class="depoimentos">
+            <div class="container">
+                <h2 class="dep-title">depoimentos</h2>
+   
+                <!--Depoimentos em vídeo-->
+                <div class="depoimentos-container-imagem">
 
-                <h2 class="main__body--secundary-title" >Quando eu devo começar?</h2>
-                <p class="main__body--description">​
-                    Não perca tempo, realize seu sonho de falar Inglês, priorize seu sucesso na vida, venha conhecer a metodologia que vai fazer você desenvolver a compreensão e a comunicação, faça parte dos 5% falantes de Inglês.
-                ​</p>
+                    <img class = "img-dep" src="assets/imgs/dep01.jpeg" alt="">
+                    <img class = "img-dep" src="assets/imgs/dep02.jpeg" alt="">
+                    <img class = "img-dep" src="assets/imgs/dep03.jpeg" alt="">
+                   
 
-                <p class="main__body--description">
-                    Escolha ter sucesso ao invés de fracasso, preparei dicas exclusivas para você não perder nenhum momento comigo, acompanhe nas redes sociais e entre em nosso grupo de whatsapp, lá você irá receber semanalmente dicas para seu desenvolvimento no idioma.
-                </p>
-
-                <div class="cta-grupo">
-                    <a href="#" class="main__body--group-btn">                              Inscreva-se Gratuitamente
-                    </a>
-                    <p>Grupo Exclusivo</p>
+                  
                 </div>
 
-                <!--Description-->
-                <section class="main__body--skills-container">
-                    <div class="background__blue">
-                        <i class="fas fa-book"></i>
-                        <p class="main_body--skills-title">reading</p>
-                        <p>Aprenda a ler com as técnicas corretas.</p>
-                    </div>
-                    <div class="background__red">
-                        <i class="fas fa-headphones-alt"></i>
-                        <p class="main_body--skills-title">Listening</p>
-                        <p>Desenvolva a habilidade da compreensão com a metodologia learning how to learn.</p>
-                    </div>
-                    <div class="background__blue">
-                        <i class="fas fa-pen-square"></i>
-                        <p class="main_body--skills-title">WRITING</p>
-                        <p>Um fluente da língua Inglesa também precisa aprender a escrever.</p>
-                    </div>
-                    <div class="background__red">
-                        <i class="fas fa-comments"></i>
-                        <p class="main_body--skills-title">SPEAKING</p>
-                        <p>Você aprende a falar da maneira certa e no seu ritimo.</p>
-                    </div>
-                </section>
+                <div class="depoimentos-container-videos">
+                    <iframe class="video-dep" src="https://www.youtube.com/embed/_OvEewBlnPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <!--witness-->
-                <section class = "witness">
-                    <div class="witness__container">
-                        <div class="witness__container--item">
-                            <img class ="witness__container--img" src="imagens/vinicius.png" alt="">
-                            <p class="witness__container--name">Vinicius</p>
-                            <p class="witness__container__description">
-                                Olá, meu nome é Vinicius, sou de São Paulo, faço o curso do Tom idiomas, e minha opinião sobre o curso é que foi uma das melhores oportunidades que eu já tive, realmente a gente desenvolve o Inglês.
-                            </p>
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <div class="witness__container--item">
-                            <img class ="witness__container--img" src="imagens/marlei.png" alt="">
-                            <p class="witness__container--name">Marlei</p>
-                            <p class="witness__container__description">Oi, meu nome é Marlei Guimarães, sou de Posto de Caldas-MG, eu faço a mentoria com o Tom, é muito bom, facilita muito o aprendizado e aumenta nosso vocabulário.</p>
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                        <div class="witness__container--item">
-                            <img class ="witness__container--img" src="imagens/claudiana.png" alt="">
-                            <p class="witness__container--name">
-                                Claudiana
-                            </p>
-                            <p class="witness__container__description">Com as aulas eu consegui  abrir minha visão de ver sempre um dia novo para novos sonhos, 
-                                O teacher me ajuda a manter o  foco na  jornada para o sucesso, eu não curtia muito inglês e achei que nunca seria necessário, mas justamente ao começar entendi que deveria ir para fora e fazer algo. Entendi com as aulas que  não é o seu quarto que é uma prisão, é você mesmo. Então Comecei a usar a minha  energia para se preocupar menos acreditar mais. </p>
-                                <i class="fas fa-quote-right"></i>
-                        </div>
-                    </div>
+                    <iframe class ="video-dep" src="https://www.youtube.com/embed/R8h7r471TaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                </section>
-
-            </section>
-            <aside class="aside__content">
-                <h2 class="aside__content--title">Assista:</h2>
-                <div class="aside__content--videos">
-                   
-                        <iframe class="aside__content-video"  src="https://www.youtube.com/embed/ffu_wNHJHtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                   <iframe  class="aside__content-video"   src="https://www.youtube.com/embed/RLpTiwhegvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <iframe  class="aside__content-video" src="https://www.youtube.com/embed/uEN0yzi5CZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video-dep" src="https://www.youtube.com/embed/qW-Iq3h2Li4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     
-                    <iframe class="aside__content-video" src="https://www.youtube.com/embed/xz8Mb72fQms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   
+                    <iframe class="video-dep" src="https://www.youtube.com/embed/xz8Mb72fQms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 </div>
-            </aside>
-        </div>
+            </div>
+        </section>
+
+        <section class="description_2">
+            <svg class="description_2_svg_up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#285C8E" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,256C384,277,480,267,576,245.3C672,224,768,192,864,154.7C960,117,1056,75,1152,69.3C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <div class="container">
+                <h2 class="description_2_title">Quando eu devo começar?</h2>
+                <p class="description_2_body">Não perca tempo, realize seu sonho de falar Inglês, priorize seu sucesso na vida, venha conhecer a metodologia que vai fazer você desenvolver a compreensão e a comunicação, faça parte dos 5% falantes de Inglês.​</p>
+
+            </div>
+            <svg class="description_2_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#285C8E" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,256C384,277,480,267,576,245.3C672,224,768,192,864,154.7C960,117,1056,75,1152,69.3C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </section>
+        
+        <section class="professor">
+      
+            <div class="container">
+                <div class="professor-container">
+                    <!--Circle Tom IMG-->
+                    <div class="container-circle">
+                        <div class="box">
+                            <div class="circle">
+                                <img src="assets/imgs/tom.png" alt="">
+                        </div>
+                        <img src="assets/imgs/tom.png" alt="">
+                       </div>
+                    </div>
+
+                    <div class="professor-description-container">
+                        <h2 class="professor-title">
+                            Sobre o Professor
+                        </h2>
+                        <p class="professor-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eum velit, qui doloremque nisi reprehenderit illum. Ab, nemo, amet consectetur ipsum mollitia enim vitae iste distinctio dolores repellat ipsam in?</p>
+
+                        <p class="professor-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eum velit, qui doloremque nisi reprehenderit illum. Ab, nemo, amet consectetur ipsum mollitia enim vitae iste distinctio dolores repellat ipsam in?</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+
+
+        <section class="bonus">
+            <div class="container">
+                <h2 class="title-bonus">Bônus Exclusivos</h2>
+                <div class="bonus-grid">
+                    <div class="bonus-item">
+                        <img class = "bonus-img" src="assets/imgs/bonus01.png" alt="">
+                        <div class="bonus-item-description">
+                            <h3 class = "bonus-item-title">TURBINE SUA LEITURA NO INGLÊS</h3>
+                            <p class= "bonus-description">Desenvolva sua leitura atráves de técnicas que desenvolve as 4 habilidades
+                                linguísticas; reading, writing, speaking e listening.
+                                </p>
+                            <p class ="bonus-price"><span class = "color-red">DE R$ 97,00...</span> <span class="color-blue">HOJE será GRÁTIS!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus-grid">
+                    <div class="bonus-item">
+                        <img class = "bonus-img" src="assets/imgs/bonus02.png" alt="">
+                        <div class="bonus-item-description">
+                            <h3 class = "bonus-item-title">MENTORIA EXCLUSIVA POR 2 MESES
+                            </h3>
+                            <p class= "bonus-description">
+                                Tenha um acompanhamento de perto para alcançar mais rápido sua fluência no
+                            Inglês, tire suas dúvidas e saiba como realizar um plano de estudo eficiente.
+                            </p>
+                            <p class ="bonus-price"><span class="color-red">
+                                DE R$ 687,00...</span> <span class="color-blue">HOJE será GRÁTIS!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus-grid">
+                    <div class="bonus-item">
+                        <img class = "bonus-img" src="assets/imgs/bonus03.png" alt="">
+                        <div class="bonus-item-description">
+                            <h3 class = "bonus-item-title">LIVES EXCLUSIVAS PARA VOCÊ ALCANÇAR LOGO A FLUÊNCIA
+                            </h3>
+                            <p class= "bonus-description">
+                                Participe das LIVES fechadas, exclusivas para você aluno dos TOM IDIOMAS, faça
+                            parte do alunos TOPs.
+                            </p>
+                            <p class ="bonus-price"><span class="color-red">
+                                DE R$ 500,00...</span> <span class="color-blue">HOJE será GRÁTIS!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <svg  class ="svg-certificado"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#285C8E" fill-opacity="1" d="M0,96L1440,224L1440,320L0,320Z"></path></svg>
+
+        <section class="certificado">
+            <div class="container">
+                <h2 class="certificado-title">certificado</h2>
+                <p class="certificado-description">Você terá direito a um certificado de conclusão.
+                    Válido em todo Território Nacional Conforme Lei nº
+                    9.394/96.</p>
+            </div>
+        </section>
+
+        
+        <svg  class ="svg-price" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#285C8E" fill-opacity="1" d="M0,96L1440,224L1440,320L0,320Z"></path></svg>
+
+        <section class="price">
+            <div class="container">
+                <h2 class="price-title">Você Terá Acesso:</h2>
+                <div class="price-container">
+                    <div class="price-item">
+                        <p class="price-description">Curso Tom Idiomas</p>
+                        <p class="price-red">R$697,00</p>
+                    </div>
+                    <div class="price-item">
+                        <p class="price-description">Turbine sua leitura no inglês</p>
+                        <p class="price-red">R$97,00</p>
+                    </div>
+                    <div class="price-item">
+                        <p class="price-description">Mentoria Exclusiva por 2 Meses</p>
+                        <p class="price-red">R$687,00</p>
+                    </div>
+                    <div class="price-item">
+                        <p class="price-description">Lives Exclusivas Para Você Alcançar Logo A Fluência</p>
+                        <p class="price-red">R$500,00</p>
+                    </div>
+                </div>
+                <div class="price-total">
+                    <p class="price-description-total">TOTAL</p>
+                    <p class="price-red-total">R$1981,00</p>
+                    <p>Mas HOJE sairá por apenas 12 vezes de </p>
+                    <div class="price-12">
+                        R$ 33,09
+                    </div>
+                    <p>ou R$ 397 à vista</p>
+                </div> 
+                <a href ="https://pay.hotmart.com/Y50534281J?checkoutMode=10&bid=1633463368955" class="cta-price">Quero Minha Vaga!</a>
+            </div>
+        </section>
+
+        <section class="garantia">
+           <div class="container">
+                <div class="garantia-container">
+                    <img src="assets/imgs/Selo_de_Garantia.png" class="garantia-img" alt="">
+                    <div class="garantia-description">
+                        <h2 class="garantia-title">7 dias de garantia</h2>
+                        <p class="garantia-paragrafo">
+                            Se você não ficar satisfeito com o curso em 7 dias, entre em contato  e devolveremos 100% do seu dinheiro!
+                        </p>
+                    </div>
+                </div>
+           </div>
+        </section>
     </main>
 
     <footer>
         
-        <div class="footer-container">
-            <div class="footer-left">
-                <p>Copyright © 2021 por Tom Idiomas Todos os direitos reservados.</p>                    
-                <p>CNPJ 15556748000142</p>
-                <p>contato@tomidiomas.com.br</p>
-            </div>
-            <div class="footer-center">
-                <a href="https://www.tomidiomas.com.br/polit%C3%ADca-de-privacidade">Termos de Uso e Política de Privacidade</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/tomidiomas/"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/tomidiomas"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UCxqpc73WP07uOChyWjW0-zA"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <p>Copyright &copy; 2021 por Tom Idiomas Todos os direitos reservados.</p>                    
+                    <p>CNPJ 15556748000142</p>
+                    <p>contato@tomidiomas.com.br</p>
+                </div>
+                <div class="footer-center">
+                    <a href="https://www.tomidiomas.com.br/polit%C3%ADca-de-privacidade">Termos de Uso e Política de Privacidade</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/tomidiomas/"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.facebook.com/tomidiomas"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxqpc73WP07uOChyWjW0-zA"><i class="fab fa-youtube fa-2x"></i></a>
 
+                </div>
             </div>
-        </div>
-</footer>
-
+        
+    </footer>
+    <script src="assets/source/app.js"></script>
 </body>
 </html>
