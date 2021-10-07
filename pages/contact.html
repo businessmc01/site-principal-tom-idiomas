@@ -7,6 +7,7 @@
     <title>Contato</title>
     <script src="https://kit.fontawesome.com/dc6a2949f4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
     <i class="fas fa-bars menu-icon"></i>
@@ -22,8 +23,8 @@
             <nav class="header__nav">
                 <ul class="header__nav--list">
                     <li class="close-btn">X</li>
-                    <li class="header__nav--item"><a href="#home" class="header__nav--links">Home</a></li>
-                    <li class="header__nav--item"><a href="#contact" class="header__nav--links">Contato</a></li>
+                    <li class="header__nav--item"><a href="../index.html" class="header__nav--links">Home</a></li>
+                    <li class="header__nav--item"><a href="./contact.html" class="header__nav--links current">Contato</a></li>
                     <li class="header__nav--item"><a href="#about" class ="header__nav--links">Sobre Nós</a></li>
                     <div class="header__nav--social">
                         <a href="https://www.instagram.com/tomidiomas/"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
@@ -40,17 +41,20 @@
         <div class="container">
             <section class="contact">
                 <div class="contact__left">
-
+                    <img src="../imagens/tom-contact.png" alt="">
                 </div>
                 <div class="contact__right">
-                    <form action="">
-                        <label for="name">Nome:</label>
+                    <img src="../imagens/background-contact.png" alt="">
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                       <!-- <label for="name">Nome:</label>-->
                         <input type="text" name="name" id="name" required placeholder="Nome">
-                        <label for="email">E-mail:</label>
+                       <!-- <label for="email">E-mail:</label>-->
                         <input type="email" name="email" id="email" required placeholder="E-mail">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required placeholder="Digite sua mensagem aqui..."></textarea>
-                        <input type="submit" value="Enviar">
+                        <!-- <label for="mensagem">Mensagem:</label>-->
+                        <textarea name="message" id="message" required placeholder="Digite sua mensagem aqui..." ></textarea>
+                        <input type="hidden" name="accessKey" value="c69218c1-e146-425b-b573-7eb32245ff57">
+                        <input type="hidden" name="redirectTo" value="https://www.tomidiomas.com.br/">
+                        <input type="submit" value="Enviar" class="btn">
                     </form>
                 </div>
             </section>

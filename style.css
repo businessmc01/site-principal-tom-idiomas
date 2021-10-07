@@ -78,10 +78,21 @@ body{
     font-weight: bold;
 }
 
+.fa-youtube:hover{
+    color:red;
+}
+.fa-twitter:hover {
+    color:#1D9BF0;
+}
+.fa-instagram:hover{
+    color:#f09433; 
+}
+.fa-facebook:hover{
+    color:#1877F2;
+}
 .header__nav--links:hover{
     background:var(--red-square);
 }
-
 .header__nav--social a{
  display:inline-block;
  text-decoration: none;
@@ -232,7 +243,7 @@ body{
     color:white;
     font-weight:bold;
     width:100%;
-    padding:.5rem;
+    padding:1rem .5rem;
     margin: 2rem auto;
     border-radius: 15px;
     animation:increase 1s infinite;
@@ -265,6 +276,7 @@ body{
     border-radius: 5px;
     color:white;
     font-weight: normal;
+    text-transform: uppercase;
 }
 .aside__content--title-red{
         background:var(--red-square);
@@ -277,6 +289,7 @@ body{
     margin-top:1rem;
     color:white;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 .aside__content--title {
@@ -299,7 +312,7 @@ body{
 
 .grupos-whats-telegram{
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 1rem;
 
@@ -316,7 +329,6 @@ body{
 }
 .telegram:hover,.whatsapp:hover{
     transform:scale(1.1);
-    background:var(--red-square);
 }
 .telegram i{
     font-size:32px;
@@ -409,6 +421,14 @@ footer{
 }
 
 @media (max-width:768px){
+    .aside__content--title-gray,.aside__content--title-red{
+
+        margin:0 auto;
+    }
+    .grupos-whats-telegram{
+    justify-content: center;
+    margin-top:1rem;    
+    }
     .container{
         width:95%;
     }
@@ -483,9 +503,6 @@ footer{
         width:100%;
         text-align: center;
         
-    }
-    .header__nav--links:hover{
-        background:hsl(210, 75%, 43%);
     }
     .header__nav--links{
         display:block;

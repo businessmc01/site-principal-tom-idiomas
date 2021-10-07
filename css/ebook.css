@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5; 
+    background:#3073d1;
+}
+
+:root{
+    --dark-blue:#1E3B64;
+    --white:#fff;
+    --red:hsl(355, 79%, 50%);
+    --red-square:#901012;
+    --blue-square:#0F3B68;
+
+}
+
+.container{
+    width: 90%;
+    margin:0 auto;
+    max-width:65rem;
+}
+/*Main*/
+.main__right img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+.main__container{
+    height:100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.main__left h1{
+    color:white;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size:2.5rem;
+}
+.main__left form p{
+    color:white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    font-size:1.2rem;
+}
+.main__left form {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.main__left form input{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    padding:.5rem;
+    border:none;
+    border-radius: 10px;    
+}
+
+
+.btn{
+    background: #ff0000;
+    color:#fffff5;
+    font-weight: bold;
+    padding:.8rem .2rem !important;
+    cursor:pointer;
+}
+
+.btn:hover{
+    transform:scale(1.04)
+}
+
+/*Footer*/
+
+footer{
+    background:hsl(210, 100%, 18%);
+    padding-bottom:2rem;
+    padding-top:2rem;
+    color:white;
+    font-size: .8rem;
+}
+
+.footer-social a,.footer-center a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer-container {
+    display:flex;
+    justify-content: space-between;
+    padding:.8rem;
+    align-items: center;
+}
+
+.footer-social a{
+    margin-left:.5rem;
+
+}
+
+.footer-left p{
+    margin-top:.5rem;
+}
+
+.menu-icon{
+    position:absolute;
+    right:50px;
+    font-size:32px;
+    top:35px;
+    cursor:pointer;
+    opacity: 0;
+    transition:all .3s ease;
+}
+.menu-icon:hover{
+    transform: scale(1.1);
+    color:#1E3B64;
+}
+
+
+
+@media (max-width:768px){
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-center{
+        margin-top:1rem;
+    }
+
+    .footer-social{
+        margin-top:1rem;
+    }
+
+    .container{
+        width:95%;
+    }
+
+    .main__container{
+        grid-template-columns: 1fr;
+        height:auto;
+    }
+
+}
+

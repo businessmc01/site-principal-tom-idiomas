@@ -30,6 +30,9 @@ body{
 
 /*NavBar*/
 /*logo*/
+.current{
+    background:var(--red-square);
+}
 .header__logo{
     margin-top:1rem;
     height: 100px;
@@ -56,9 +59,10 @@ body{
     margin-top:.5rem;
 }
 /*NavBar*/
+/*logo*/
 .header__nav{
     background:var(--dark-blue);
-    padding:.3rem 0rem;
+    padding:0rem;
 }
 
 .header__nav--list{
@@ -72,14 +76,24 @@ body{
     text-decoration: none;
     color:var(--white);
     padding:.5rem 1rem;
-    margin-right: .8rem;
     font-weight: bold;
 }
 
-.header__nav--links:hover{
-    color:var(--red);
+.fa-youtube:hover{
+    color:red;
 }
-
+.fa-twitter:hover {
+    color:#1D9BF0;
+}
+.fa-instagram:hover{
+    color:#f09433; 
+}
+.fa-facebook:hover{
+    color:#1877F2;
+}
+.header__nav--links:hover{
+    background:var(--red-square);
+}
 .header__nav--social a{
  display:inline-block;
  text-decoration: none;
@@ -99,6 +113,81 @@ body{
 .header__nav--social a:hover{
     color:var(--red);
    }
+
+
+/*Contact*/
+.contact{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+
+.contact .contact__left img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.contact__right {
+    position:relative;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__right img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+
+}
+
+.contact__right form{
+    position:absolute;
+    z-index:2;
+    background:hsl(0, 0%, 95%);
+    width:65%;
+    padding:2rem 2rem 0rem 2rem;
+    border-radius: 15px;
+    display:grid;
+    grid-template-columns: 1fr;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+}
+.contact__right form textarea{
+    width: 100%;
+    resize:none;
+}
+
+label{
+    margin: .5rem 0rem;
+}
+
+input, textarea{
+    width:100%;
+    border:2px solid #1E3B64;
+    border-radius: 5px;
+    font-size:1.2rem;
+    margin-bottom: 1rem;
+    padding:.2rem
+
+}
+.btn{
+    border:none;
+    cursor:pointer;
+    padding:.2rem .5rem;
+    background:#1E3B64;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    margin-top:1rem;
+    color:white;
+}
+
+.btn:hover{
+    background:red;
+}
 
 
 /*Footer*/
@@ -184,6 +273,17 @@ footer{
     .aside__content-video{
         min-height:300px;
         width:100%;
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact__right img{
+        z-index:-2;
+    }
+
+    .contact__right form{
+        width:80%;
     }
 
 }
